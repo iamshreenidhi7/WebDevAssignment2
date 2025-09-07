@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laundry Service Hero Section</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5vh 5vw;
+            box-sizing: border-box;
+            background: #fff;
+            box-shadow: 0 2px 6px #eee;
+        }
+        .logo {
+            font-weight: 600;
+            font-size: 2.2vh;
+            color: #26324a;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 2vw;
+        }
+        .navbar-menu a {
+            text-decoration: none;
+            color: #26324a;
+            font-size: 2vh;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .navbar-menu a:hover {
+            color: #0097fe;
+        }
+        .username {
+            padding: 1vw 2vw;
+            background: #edf8ff;
+            border-radius: 1vw;
+            font-size: 2vh;
+            color: #0097fe;
+            font-weight: 500;
+        }
+        .hero-section {
+            width: 100vw;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .hero-left, .hero-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-left {
+            padding-left: 7vw;
+        }
+        .hero-heading {
+            font-size: 4vw;
+            font-weight: 700;
+            color: #26324a;
+            margin-bottom: 1vw;
+        }
+        .hero-heading .hl-main {
+            color: #0097fe;
+        }
+        .hero-desc {
+            font-size: 1.5vw;
+            color: #6b7b9d;
+            margin-bottom: 2vw;
+            max-width: 32vw;
+        }
+        .hero-btn {
+            display: inline-block;
+            padding: 1vw 2.5vw;
+            font-size: 1.5vw;
+            background: #0097fe;
+            color: #fff;
+            border: none;
+            border-radius: 1vw;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #0097fe33;
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+        .hero-btn:hover {
+            background: #007ad6;
+        }
+        .hero-right {
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-img {
+            width: 22vw;
+            height: 22vw;
+            object-fit: contain;
+        }
+        @media (max-width: 900px) {
+            .hero-section {
+                flex-direction: column;
+                height: auto;
+            }
+            .hero-left, .hero-right {
+                padding: 2vw;
+                flex: unset;
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+            .hero-img {
+                width: 50vw;
+                height: 50vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="navbar-menu">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="username">Username</div>
+    </nav>
+    <section class="hero-section">
+        <div class="hero-left">
+            <div class="hero-heading">
+                Revitalize Your <br>
+                Clothes with Expert <br>
+                <span class="hl-main">Laundry Services!</span>
+            </div>
+            <div class="hero-desc">
+                From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!
+            </div>
+            <button class="hero-btn">Book a service today!</button>
+        </div>
+        <div class="hero-right">
+            <!-- Laundry-related image, example Unsplash -->
+            <img class="hero-img" src="Laundry.png" alt="Laundry service image" />
+        </div>
+    </section>
+</body>
+</html>
